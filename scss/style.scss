@@ -1,0 +1,226 @@
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$main-color: #b7bacd;
+$secondary-color: #fbfbfb;
+
+body{
+	background: #30394c url('../img/bg.jpg') 50%;
+	background-size: cover;
+	font: 400 14px/1.6 'Lato', sans-serif;
+	color: $main-color;
+	padding-top: 146px;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	border-radius: 2px;
+	background-color:  #13e28d;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 35px;
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: #e8a400;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-game {
+	background-color:  #212534;
+	box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+	max-width: 600px;
+	margin: 0 auto;
+
+	&__top {
+		background-color:  #2b3040;
+	}
+
+	&__menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+	}
+}
+
+.ba-tab {
+	width: 30%;
+	text-align: center;
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+	color: $main-color;
+
+	a {
+		color: currentColor;
+		text-decoration: none;
+		display: block;
+		padding: 33px 0 27px;
+	}
+
+	svg {
+		fill: currentColor;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 16px;
+	}
+
+	&:hover {
+		border-bottom: 2px solid $secondary-color;
+	}
+
+}
+
+.ba-tab.active {
+	color: $secondary-color;
+	border-bottom: 2px solid $secondary-color;
+}
+
+.ba-game__body:not(.active) {
+	display: none;
+}
+
+.ba-panel {
+	padding: 11px 30px;
+	text-align: center;
+}
+
+.ba-game-cover {
+	float: left;
+	width: 40%;
+	padding: 59px 0 50px 12px;
+	text-align: center;
+
+	img {
+		display: block;
+		margin: 0 auto 25px;
+	}
+}
+
+.ba-stars {
+
+}
+
+.ba-star {
+	fill: #ffdd3f;
+	margin-right: 5px;
+}
+
+.ba-star-off {
+	fill: #4b536b;
+}
+
+.ba-game__info {
+	float: right;
+	width: 60%;
+	padding: 60px 41px 62px 6px;
+	position: relative;
+}
+
+.ba-rate {
+	position: absolute;
+	top: 57px;
+	right: 42px;
+}
+
+.ba-game__title {
+	color: #FFF;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.ba-game__release {
+	color: $secondary-color;
+	margin: 0 0 33px;
+}
+
+.ba-price__body {
+	float: left;
+	width: 35%;
+}
+
+.ba-button--buy {
+	float: right;
+}
+
+.ba-order {
+	margin-top: 57px;
+}
+
+.ba-discount {
+	color:  #fedd3f;
+	display: block;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.ba-price {
+	color: #FFF;
+	display: block;
+	font-size: 32px;
+	line-height: 1.2;
+	margin-top: 2px;
+}
